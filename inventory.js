@@ -64,4 +64,9 @@ function calculateInventoryValue () {
     
 }
 // Create calculateInventoryValue function
+
+function processSale () {
+
+}
+// i ran out of time :( [idk why the curly bracket is red... help]
 }
