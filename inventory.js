@@ -2,7 +2,7 @@
 
 const inventory = 
 [
-{ name: "laptop", price: 500, quantity: 10, lowStockLevel: 3},
+{ name: "laptop", price: 500, quantity: 10, lowStockLevel: 5},
 { name: "mouse", price: 70, quantity: 30, lowStockLevel: 5},
 { name: "keyboard", price: 100, quantity: 25, lowStockLevel: 5,},
 { name: "monitor", price: 250, quantity: 20, lowStockLevel: 5},
@@ -26,7 +26,7 @@ const inventory =
 displayProuctDetails(inventory[0]);
 // Create displayProductDetails function
 var inventory = [
-{ name: "laptop", price: 500, quantity: 10, lowStockLevel: 3},
+{ name: "laptop", price: 500, quantity: 10, lowStockLevel: 5},
 { name: "mouse", price: 70, quantity: 30, lowStockLevel: 5},
 { name: "keyboard", price: 100, quantity: 25, lowStockLevel: 5,},
 { name: "monitor", price: 250, quantity: 20, lowStockLevel: 5},
@@ -48,5 +48,15 @@ function updateStock(product, unitsSold){
     console.log('stock status:' + stockStatus);
 
 // create updatedStock function
+
+function checkLowStock () {
+    inventory.forEach(function(product){
+        if (product.quantity < product.lowStockLevel) {
+            console.log(product.name + 'is low in stock.');
+        }
+    });
+
+//"Create checkLowStock function"
+
 
 }
