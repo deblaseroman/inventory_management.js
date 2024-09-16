@@ -1,5 +1,5 @@
-{
 
+{
 const inventory = 
 [
 { name: "laptop", price: 500, quantity: 10, lowStockLevel: 5},
@@ -58,5 +58,10 @@ function checkLowStock () {
 
 //"Create checkLowStock function"
 
-
+function calculateInventoryValue () {
+    var totalValue = invintory.reduce((price * quantity));
+    console.log('total inventory:', totalValue);
+    
+}
+// Create calculateInventoryValue function
 }
